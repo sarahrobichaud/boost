@@ -1,0 +1,28 @@
+{
+  "name": "boostbot",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Tomy Robichaud",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts"
+  },
+  "devDependencies": {
+    "@types/he": "^1.1.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.7.0",
+    "dotenv": "^8.2.0",
+    "ts-node": "^8.6.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "he": "^1.2.0",
+    "lodash": "^4.17.15",
+    "node-opus": "^0.3.3",
+    "random-puppy": "^1.1.0",
+    "youtube-search": "^1.1.4",
+    "ytdl-core": "^1.0.7"
+  }
+}
