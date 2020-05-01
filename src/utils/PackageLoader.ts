@@ -23,7 +23,8 @@ const register = (pathName: string, packageName: string) => {
   );
 
   filtered.forEach((file: string) => {
-    if (!file.endsWith(".ts")) return;
+      
+    if (!file.endsWith(".ts") && !file.endsWith(".js")) return;
     let props = require(`${src}${pathName}/${file}`);
     if (props.default) {
       counter += 1;

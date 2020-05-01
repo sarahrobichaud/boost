@@ -21,7 +21,7 @@ import IModule from './interfaces/IModule';
 //Initiate the client.
 console.log(process.env.NODE_ENV);
 
-dotenv.config({path: `config/config.env`});
+dotenv.config();
 
 const client: Client = new Client();
 

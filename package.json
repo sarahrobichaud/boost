@@ -5,7 +5,9 @@
   "author": "Tomy Robichaud",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev src/index.ts"
+    "start": "ts-node-dev src/index.ts",
+    "build": "tsc -p .",
+    "prod" : "NODE_ENV=production node dist/index.js"  
   },
   "devDependencies": {
     "@types/he": "^1.1.0",
@@ -13,11 +15,11 @@
     "@types/node": "^13.7.0",
     "dotenv": "^8.2.0",
     "ts-node": "^8.6.2",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "ts-node-dev": "^1.0.0-pre.44"
   },
   "dependencies": {
     "discord.js": "^11.5.1",
+    "typescript": "^3.7.5",
     "he": "^1.2.0",
     "lodash": "^4.17.15",
     "node-opus": "^0.3.3",

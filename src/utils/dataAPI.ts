@@ -7,7 +7,7 @@ import { update } from "./api/update";
 import { register } from "./api/register";
 import ISettings from "../interfaces/ISettings";
 
-const src = path.parse(__dirname).dir;
+const src = process.cwd();
 const guildsPath = `${src}/data/guilds.json`;
 const usersPath = `${src}/data/users.json`;
 
