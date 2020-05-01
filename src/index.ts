@@ -10,7 +10,7 @@ import dotenv from 'dotenv';
 import {Client, Collection, Message} from 'discord.js';
 
 //API
-import dataAPI from './utils/dataAPI';
+//import dataAPI from './utils/dataAPI';
 
 //Helpers / Utilities / Interfaces
 import {run} from './helpers/run';
@@ -77,8 +77,8 @@ client.on('ready', async () => {
     );
 
     //updates.
-    dataAPI.guilds.update(client.guilds);
-    dataAPI.members.update(client.guilds);
+    //dataAPI.guilds.update(client.guilds);
+    //dataAPI.members.update(client.guilds);
 
     //Log if guild total changes.
     if (totalGuilds != _tempTotal) {
@@ -102,10 +102,11 @@ client.on('message', async (message: Message) => {
     args: Array<string>;
   }
   //Force update
-  await dataAPI.guilds.update(client.guilds);
+  //await dataAPI.guilds.update(client.guilds);
 
   // Get custom settings from local storage.
-  const settings = dataAPI.guilds.getSingle(message.guild.id);
+  //const settings = dataAPI.guilds.getSingle(message.guild.id);
+  const settings = null;
 
   //Set custom prefix if available.
   const prefix: string = settings ? settings['prefix'] : process.env.PREFIX;

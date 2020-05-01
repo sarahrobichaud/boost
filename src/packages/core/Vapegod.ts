@@ -6,7 +6,7 @@ const Vapegod = {
   execute: async (props, args) => {
     const { channel } = props;
     channel.startTyping();
-    const gif = new Attachment("src/lib/gif/vapegod.gif");
+    const gif = new Attachment("lib/gif/vapegod.gif");
     await channel
       .send({
         file: gif

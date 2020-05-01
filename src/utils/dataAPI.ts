@@ -1,5 +1,4 @@
 import fs, { writeFileSync } from "fs";
-import path from "path";
 
 import { Guild, Collection, GuildMember } from "discord.js";
 
